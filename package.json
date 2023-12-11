@@ -1,0 +1,24 @@
+{
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "build:main": "turbo run build --filter=main...",
+    "build:movies": "turbo run build --filter=movies...",
+    "build:series": "turbo run build --filter=series...",
+    "dev": "turbo run dev",
+    "start": "turbo run start",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "lint": "turbo run lint",
+    "format": "prettier --write ."
+  },
+  "author": "jose baptista",
+  "dependencies": {
+    "prettier": "^3.1.1",
+    "turbo": "^1.10.1"
+  },
+  "packageManager": "npm@10.1.0"
+}
