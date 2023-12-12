@@ -4,11 +4,11 @@ Technical test for Microfrontends project
 
 #### checklist
 
-- [ x ] Completed all questions
-- [ x ] microfrontends was implemented
-- [ x ] The styled-component library was implemented
-- [ x ] three 100% independent projects
-- [ x ] easy to scale
+- [x] Completed all questions
+- [x] microfrontends was implemented
+- [x] The styled-component library was implemented
+- [x] three 100% independent projects
+- [x] easy to scale
 - [ ] add tests
 - [ ] add language change option
 
