@@ -27,7 +27,7 @@ pnpm dev
 
 ## Interview Questions
 
-### What is accessibility? How do you achieve it?
+### - What is accessibility? How do you achieve it?
 
 Accessibility is a way of treating everyone equally, allowing a greater number of users to access information effectively.
 
@@ -45,11 +45,11 @@ Event loop is an internal javaScript loop that is responsible for managing the q
 
 The async/await statement would be the way we can wait for processes without interrupting with the javascript event loop allowing us to make requests without creating blocking code.
 
-### If you are getting too many API calls being made from your hooks, what can you do to prevent this?
+### - If you are getting too many API calls being made from your hooks, what can you do to prevent this?
 
 It must be guaranteed that the hook is as optimized as possible, and the data loading is user-friendly, in case it cannot be modularized.
 
-### How do you manage the global state? And why in that way?
+### - How do you manage the global state? And why in that way?
 
 The global state is a powerful development tool that allows us:
 
@@ -58,6 +58,6 @@ The global state is a powerful development tool that allows us:
 - modularize and encapsulate data reading and future updates.
 - allows reading the data and updating it only where it is required without affecting the rendering of other parent or child components.
 
-### What is progressive rendering?
+### - What is progressive rendering?
 
 Progressive rendering is a technique that defines individual style sheets for separate pages or components. It can benefit very large sites where individual pages are built from a many components.
