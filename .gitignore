@@ -39,3 +39,4 @@ yarn-error.log*
 .turbo
 apps/main/.env
 apps/main/.env.development
+.vscode/settings.json

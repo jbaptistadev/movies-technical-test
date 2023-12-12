@@ -15,8 +15,8 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  basePath: '/serie',
-  assetPrefix: '/serie',
+  basePath: '/series',
+  assetPrefix: '/series',
 }
 
 module.exports = nextConfig

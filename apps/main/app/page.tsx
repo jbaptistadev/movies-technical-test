@@ -4,9 +4,12 @@ import {
   CardContainer,
   Card,
 } from '@microfrontends-jb/design-system'
+import { config } from '@microfrontends-jb/movie-db-service'
 import Image from 'next/image'
 
 export default function Home() {
+  const { BASE_URL_DB_IMAGE } = config
+
   const movies: {
     title: string
     img: any
@@ -14,35 +17,33 @@ export default function Home() {
   }[] = [
     {
       title: "Harry Potter and the Philosopher's Stone",
-      // imgSrc: 'https://image.tmdb.org/t/p/w500/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg',
       img: (
         <Image
-          src="https://image.tmdb.org/t/p/w500/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg"
+          src={`${BASE_URL_DB_IMAGE}/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg`}
           alt="Picture of the author"
           width={500}
           height={400}
           placeholder="blur"
           priority={false}
-          blurDataURL="https://image.tmdb.org/t/p/w500/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg"
+          blurDataURL={`${BASE_URL_DB_IMAGE}/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg`}
         />
       ),
       urlPath: '/movie',
     },
     {
       title: 'ONE PIECE',
-      // img: 'https://image.tmdb.org/t/p/w500/rlXwxRqZa0dMssgYLQeoNo4WiXg.jpg',
       img: (
         <Image
-          src="https://image.tmdb.org/t/p/w500/rlXwxRqZa0dMssgYLQeoNo4WiXg.jpg"
+          src={`${BASE_URL_DB_IMAGE}/rlXwxRqZa0dMssgYLQeoNo4WiXg.jpg`}
           alt="Picture of the author"
           width={500}
           height={400}
           placeholder="blur"
           priority={false}
-          blurDataURL="https://image.tmdb.org/t/p/w500/wuMc08IPKEatf9rnMNXvIDxqP4W.jpg"
+          blurDataURL={`${BASE_URL_DB_IMAGE}/rlXwxRqZa0dMssgYLQeoNo4WiXg.jpg`}
         />
       ),
-      urlPath: '/serie',
+      urlPath: '/series',
     },
   ]
 

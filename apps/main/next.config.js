@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-const { MOVIE_URL, SERIE_URL } = process.env
+const { MOVIE_URL, SERIES_URL } = process.env
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -31,12 +31,12 @@ const nextConfig = {
         destination: `${MOVIE_URL}/movie/:path*`,
       },
       {
-        source: '/serie',
-        destination: `${SERIE_URL}/serie`,
+        source: '/series',
+        destination: `${SERIES_URL}/series`,
       },
       {
-        source: '/serie/:path*',
-        destination: `${SERIE_URL}/serie/:path*`,
+        source: '/series/:path*',
+        destination: `${SERIES_URL}/series/:path*`,
       },
     ]
   },

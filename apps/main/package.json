@@ -13,7 +13,9 @@
     "react": "^18",
     "react-dom": "^18",
     "styled-components": "^6.1.1",
-    "@microfrontends-jb/design-system": "workspace:*"
+    "@microfrontends-jb/design-system": "workspace:*",
+    "@microfrontends-jb/styled-lib": "workspace:*",
+    "@microfrontends-jb/movie-db-service": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20",

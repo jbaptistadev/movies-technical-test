@@ -1,7 +1,10 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
-import GlobalStyle from '@/lib/global-styles'
-import StyledComponentsRegistry from '@/lib/style-sheet-manager'
+
+import {
+  StyledComponentsRegistry,
+  GlobalStyles,
+} from '@microfrontends-jb/styled-lib'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -23,7 +26,7 @@ export default function RootLayout({
       <html lang="en">
         <body className={poppins.className}>
           <StyledComponentsRegistry>
-            <GlobalStyle />
+            <GlobalStyles />
             {children}
           </StyledComponentsRegistry>
         </body>
