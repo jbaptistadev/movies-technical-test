@@ -11,7 +11,7 @@ Technical test for Microfrontends project
 - [x] easy to scale
 - [ ] add tests
 - [ ] add language change option
-- [ ] typescript interfaces needs improvements
+- [ ] typescript interfaces need improvements
 
 ## Getting Started
 
