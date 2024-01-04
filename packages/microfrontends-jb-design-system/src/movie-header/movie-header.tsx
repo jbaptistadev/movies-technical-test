@@ -20,9 +20,13 @@ const ParagraphWrapper = styled.div`
 export const MovieHeader = ({
   movie: { title, overview, movieImage },
 }: {
-  movie: any
+  movie: {
+    title: string
+    overview: string
+    movieImage: JSX.Element
+  }
 }) => {
-  const MovieImage: any = () => movieImage
+  const MovieImage = () => movieImage
 
   return (
     <OverlapBackground poster={<MovieImage />}>

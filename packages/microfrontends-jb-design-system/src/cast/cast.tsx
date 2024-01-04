@@ -16,8 +16,16 @@ const ActorsContainer = styled.div`
   row-gap: 3rem;
 `
 
+export interface Cast {
+  cast_id: number
+  name: string
+  character: string
+  profile_path: string
+  actorImage: JSX.Element
+}
+
 interface Props {
-  cast: any[]
+  cast: Cast[]
 }
 export const Cast = ({ cast }: Props) => {
   return (

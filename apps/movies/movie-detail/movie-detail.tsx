@@ -6,8 +6,18 @@ import {
 } from '@microfrontends-jb/design-system'
 import { config } from '@microfrontends-jb/movie-db-service'
 import Image from 'next/image'
+import {
+  Cast as ICast,
+  Movie,
+} from '@microfrontends-jb/movie-db-service/services/get-movie'
 
-export const MovieDetail = ({ movie, cast }: { movie: any; cast: any }) => {
+export const MovieDetail = ({
+  movie,
+  cast,
+}: {
+  movie: Movie
+  cast: ICast[]
+}) => {
   const { BASE_URL_DB_IMAGE } = config
 
   return (
@@ -26,12 +36,12 @@ export const MovieDetail = ({ movie, cast }: { movie: any; cast: any }) => {
         }}
       />
       <Cast
-        cast={cast.map((actor: any) => ({
+        cast={cast.map((actor: ICast) => ({
           ...actor,
           actorImage: (
             <Image
               src={`${BASE_URL_DB_IMAGE}${actor.profile_path}`}
-              alt="Picture of the author"
+              alt={`Picture of the ${actor.profile_path}`}
               width={500}
               height={400}
               placeholder="blur"
